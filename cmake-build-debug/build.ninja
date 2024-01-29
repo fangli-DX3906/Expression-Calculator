@@ -1,0 +1,242 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: Calculator
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/fangli/CPP/ExpCalculator/CalculatorV4/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target Calculator
+
+
+#############################################
+# Order-only phony target for Calculator
+
+build cmake_object_order_depends_target_Calculator: phony || CMakeFiles/Calculator.dir
+
+build CMakeFiles/Calculator.dir/main.cpp.o: CXX_COMPILER__Calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/main.cpp || cmake_object_order_depends_target_Calculator
+  DEP_FILE = CMakeFiles/Calculator.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/Calculator.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Calculator
+
+
+#############################################
+# Link the executable Calculator
+
+build Calculator: CXX_EXECUTABLE_LINKER__Calculator_Debug CMakeFiles/Calculator.dir/main.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk
+  OBJECT_DIR = CMakeFiles/Calculator.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Calculator
+  TARGET_PDB = Calculator.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target calculator
+
+
+#############################################
+# Order-only phony target for calculator
+
+build cmake_object_order_depends_target_calculator: phony || CMakeFiles/calculator.dir
+
+build CMakeFiles/calculator.dir/scourcers/bleafnodes.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/bleafnodes.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/bleafnodes.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/test_calculator.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/test_calculator.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/test_calculator.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir
+
+build CMakeFiles/calculator.dir/scourcers/uleafnodes.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/uleafnodes.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/uleafnodes.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/subnodes.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/subnodes.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/subnodes.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/scanner.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/scanner.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/scanner.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/parser.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/parser.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/parser.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/mleafnodes.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/mleafnodes.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/mleafnodes.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/symboltable.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/symboltable.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/symboltable.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/storage.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/storage.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/storage.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/leafnodes.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/leafnodes.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/leafnodes.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/calc.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/calc.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/calc.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/functiontable.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/functiontable.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/functiontable.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+build CMakeFiles/calculator.dir/scourcers/excptn.cpp.o: CXX_COMPILER__calculator_Debug /Users/fangli/CPP/ExpCalculator/CalculatorV4/scourcers/excptn.cpp || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/scourcers/excptn.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/scourcers
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target calculator
+
+
+#############################################
+# Link the executable calculator
+
+build calculator: CXX_EXECUTABLE_LINKER__calculator_Debug CMakeFiles/calculator.dir/scourcers/bleafnodes.cpp.o CMakeFiles/calculator.dir/test_calculator.cpp.o CMakeFiles/calculator.dir/scourcers/uleafnodes.cpp.o CMakeFiles/calculator.dir/scourcers/subnodes.cpp.o CMakeFiles/calculator.dir/scourcers/scanner.cpp.o CMakeFiles/calculator.dir/scourcers/parser.cpp.o CMakeFiles/calculator.dir/scourcers/mleafnodes.cpp.o CMakeFiles/calculator.dir/scourcers/symboltable.cpp.o CMakeFiles/calculator.dir/scourcers/storage.cpp.o CMakeFiles/calculator.dir/scourcers/leafnodes.cpp.o CMakeFiles/calculator.dir/scourcers/calc.cpp.o CMakeFiles/calculator.dir/scourcers/functiontable.cpp.o CMakeFiles/calculator.dir/scourcers/excptn.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = calculator
+  TARGET_PDB = calculator.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/fangli/CPP/ExpCalculator/CalculatorV4/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/fangli/CPP/ExpCalculator/CalculatorV4/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/fangli/CPP/ExpCalculator/CalculatorV4 -B/Users/fangli/CPP/ExpCalculator/CalculatorV4/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/fangli/CPP/ExpCalculator/CalculatorV4/cmake-build-debug
+
+build all: phony Calculator calculator
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
